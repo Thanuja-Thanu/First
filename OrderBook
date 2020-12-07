@@ -1,0 +1,5 @@
+library(orderbook)
+filename <- system.file("extdata","sampletxt",package="orderbook")
+ob <- orderbook(file = filename)
+ob <- read.orders(ob,10000)
+ob
